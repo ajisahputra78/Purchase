@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+        <title>Purchase</title>
+    </head>
+
+    <body>
+        <section id="overlay">
+
+            <!---logo--->
+            <img src="https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_burger-logo.svg" alt="Davie's Burgers Logo" id="logo">
+            <hr>
+            <form action="submission.html" method="POST">
+
+                <h1><center>Create a burger!</center></h1>
+                <br>
+
+                <!---creat--->
+                <section class="protein">
+                    <label for="patty">Jenis protein apa yang Anda inginkan?</label>
+    			    <input type="text" name="patty" id="patty">
+                </section><br>
+                 <br>
+        
+                <section class="patties">
+                    <label for="amount">Berapa banyak roti yang Anda mau?</label>
+                    <input type="number" name="amount" id="amount">
+                </section><br>
+                <br>
+        
+                <!---range--->
+                <section class="cooked">
+                    <label for="Roti">Bagaimana Anda ingin Roti Anda dimasak</label>
+                    <br>
+                    
+                    <span>Setengah Matang</span>
+                    <input type="range" name="Roti" id="Roti" value="3" min="1" max="5">
+                    <span>Matang</span>
+                </section><br>
+                <br>
+
+                <!---checkbox-->
+                <section class="toppings">
+                    <span>Anda mau topping apa?</span>
+                    <br>
+
+                    <input type="checkbox" name="topping" id="Selada" value="Selada">
+                    <label for="Selada">Selada</label>
+                    <input type="checkbox" name="topping" id="tomat" value="tomat">
+                    <label for="tomat">Tomat</label>
+                    <input type="checkbox" name="topping" id="Bawang" value="Bawang">
+                    <label for="Bawang">Bawang</label>
+                </section><br>
+                <br>
+        
+                <!---radio--->
+                <section class="Keju">
+                    <span>Apakah Anda ingin menambahkan keju?</span>
+                    <br>
+
+                    <input type="radio" name="Keju" id="yes" value="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="Keju" id="no" value="yes">
+                    <label for="no">No</label>
+                </section><br>
+                <br>
+
+                <!---option bergulir--->
+                <section class="bun-type">
+                    <label for="bun">Anda mau roti jenis apa?</label>
+                    <select name="bun" id="bun">
+                        <option value="Wijen">Wijen</option>
+                        <option value="kentang">Kentang</option>
+                        <option value="pretzel">Roti kering yg asin</option>
+                    </select>
+                </section><br>
+                <br>
+        
+                <!---option details-->
+                <section class="sauce-selection">
+                    <label for="sauce">Jenis saus apa yang Anda mau?</label>
+                    <input list="sauces" id="sauce" name="sauce">
+                    <datalist id="sauces">
+                        <option value="saus tomat"></option>
+                        <option value="mayo"></option>
+                        <option value="Saus Keju"></option>
+                    </datalist>
+                </section><br>
+                <hr>
+
+                <!----extra info-->
+                <section class="extra-info">
+                    <center>
+                        <label for="extra">Ada lagi yang ingin Anda tambahkan?</label>
+                        <br>
+                        <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+                    </center>    
+                </section>
+                <br>
+
+                <!---submit-->
+                <section class="submission">
+                    <center>
+                        <input type="submit" value="Submit">
+                    </center>
+                </section>
+            </form>
+        </section>
+    </body>
+</html>
